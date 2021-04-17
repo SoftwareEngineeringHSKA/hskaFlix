@@ -1,9 +1,10 @@
-Liste aller Filme:
-
-<button mat-raised-button color="primary" (click)="loadFilms()">Filme laden</button>
+<button mat-raised-button color="accent" (click)="loadFilms()">Filme laden</button>
+  <h1 class="categoryTitel">Dokumentationen</h1>
 
 <div class="filmPreview">
-  <mat-card *ngFor="let film of filmList, let i = index" class="example-card">
+
+  <ng-container *ngFor="let film of filmList, let i = index">
+  <mat-card *ngIf="film.genre === 'DOKUMENTATION'" class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{film.titel}}</mat-card-title>
@@ -16,11 +17,34 @@ Liste aller Filme:
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-raised-button color="primary">Trailer</button>
+      <button mat-raised-button color="primary">Anschauen</button>
     </mat-card-actions>
   </mat-card>
+</ng-container>
+</div>
+  <h1 class="categoryTitel">Komödien</h1>
 
+<div class="filmPreview">
+  <ng-container *ngFor="let film of filmList, let i = index">
+  <mat-card *ngIf="film.genre === 'KOMOEDIE'" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{film.titel}}</mat-card-title>
+      <mat-card-subtitle>{{film.genre}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="imgPaths[i]" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        {{film.beschreibung}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">Trailer</button>
+      <button mat-raised-button color="primary">Anschauen</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>
 </div>
 
 

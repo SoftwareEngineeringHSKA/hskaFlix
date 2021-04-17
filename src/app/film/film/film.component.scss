@@ -2,15 +2,36 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.categoryTitel {
+  color: #db0031;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 50px;
+}
+
 .filmPreview {
   display: flex;
   flex-direction: row;
   width: 100%;
-
+  background: #1c1c1c;
 }
 
 mat-card {
   max-width: 300px;
   margin: 15px;
   font-family: 'Roboto', sans-serif;
+  background: #0f0f0f;
+  color: white;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+mat-card-subtitle {
+  color: #db0031;
+}
+
+mat-card-actions{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
