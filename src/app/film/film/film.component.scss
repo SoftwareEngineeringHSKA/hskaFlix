@@ -1,0 +1,16 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.filmPreview {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+mat-card {
+  max-width: 300px;
+  margin: 15px;
+  font-family: 'Roboto', sans-serif;
+}
