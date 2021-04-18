@@ -14,6 +14,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+### Build Docker Image
+
+* Run `docker build -t gruppe5/hskaflix-frontend .` in your project root directory.
+* A new Docker Image should now be visible in your Docker Desktop named "gruppe5/hskaflix-frontend"
+
+### Start Container from Docker Image
+
+* Open a Powershell and run `docker run -d -it -p 80:80/tcp --name hskaflix-frontend gruppe5/hskaflix-frontend:latest`
+* You can stop the container via your Docker Desktop or via the Commandline.
+
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

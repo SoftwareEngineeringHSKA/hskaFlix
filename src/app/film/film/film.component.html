@@ -6,7 +6,7 @@
   <ng-container *ngFor="let film of filmList, let i = index">
   <mat-card *ngIf="film.genre === 'DOKUMENTATION'" class="example-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
       <mat-card-title>{{film.titel}}</mat-card-title>
       <mat-card-subtitle>{{film.genre}}</mat-card-subtitle>
     </mat-card-header>
@@ -29,7 +29,7 @@
   <ng-container *ngFor="let film of filmList, let i = index">
   <mat-card *ngIf="film.genre === 'KOMOEDIE'" class="example-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
       <mat-card-title>{{film.titel}}</mat-card-title>
       <mat-card-subtitle>{{film.genre}}</mat-card-subtitle>
     </mat-card-header>
