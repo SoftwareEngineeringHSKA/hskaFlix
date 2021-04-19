@@ -22,15 +22,15 @@ mat-card {
   background: #0f0f0f;
   color: white;
   display: flex;
-flex-direction: column;
-justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 mat-card-subtitle {
   color: #db0031;
 }
 
-mat-card-actions{
+mat-card-actions {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
